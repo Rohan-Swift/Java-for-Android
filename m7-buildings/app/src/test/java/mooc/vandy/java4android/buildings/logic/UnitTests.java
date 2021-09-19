@@ -15,7 +15,8 @@ import static org.junit.Assert.assertTrue;
  * To work on unit tests, switch the Test Artifact in the Build Variants view.
  */
 
-public class UnitTests {
+public class UnitTests
+{
     private static final long TIMEOUT = 100;
 
     @Rubric(
@@ -25,7 +26,8 @@ public class UnitTests {
             reference = "This Test fails when: The Building area miscalculated"
     )
     @Test(timeout = TIMEOUT)
-    public void testBuildingArea() {
+    public void testBuildingArea()
+    {
         Building office = new Building(200, 400, 600, 560);
         assertEquals(80000, office.calcBuildingArea());
     }
